@@ -13,12 +13,12 @@ Based on sbt 0.11.2 it includes :
 * specs2
 
 Usage
-===================
-Open a console and :
+=====
+Open a console and:
 
     $ g8 jrevault/scalatra-squeryl.g8
 
-The '.g8' suffix is implicit:
+The '.g8' suffix is implicit so you could also do:
 
     $ g8 jrevault/scalatra-squeryl
 
@@ -30,7 +30,7 @@ Once everything is ok (you can leave everything by default) :
     
     $ sbt
     
-    $ container start
+    $ container-start
     
 Then just open a navigator and go there http://localhost:8080(http://localhost:8080) and you'll have frther instructions.
 
