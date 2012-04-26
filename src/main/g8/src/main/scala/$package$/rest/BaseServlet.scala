@@ -70,8 +70,7 @@ class BaseServlet extends ScalatraServlet {
           <ul>
             <li><a href="http://localhost:8080/" >http://localhost:8080/</a> : This web page</li>
             <li><a href="http://localhost:8080/db/init" >http://localhost:8080/db/init</a> : Initialises your database schema.<br />
-            This URL should return:<br />
-            {"res":"ok","data":"Schema created"}</li>
+            This URL should return a JSON string saying 'Schema created'</li>
           </ul>
           Now use some firefox plugin like <strong>REST Client</strong> in order to test these URLS :
           <ul>
