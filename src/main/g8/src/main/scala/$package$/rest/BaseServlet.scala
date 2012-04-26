@@ -38,7 +38,7 @@ class BaseServlet extends ScalatraServlet {
   get("/") {
     <html>
       <body>
-        <h1>G8 scalatra/suqeryl template</h1>
+        <h1>G8 scalatra/squeryl template</h1>
         <p>
           Base url : https://github.com/jrevault/g8-scalatra-squeryl
         </p>
