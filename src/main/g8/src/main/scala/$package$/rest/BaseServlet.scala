@@ -59,7 +59,7 @@ class BaseServlet extends ScalatraServlet {
             <li>URL : $db_url$</li>
             <li>Username : $db_username$</li>
             <li>Password : $db_password$</li>
-            <li>Adapter : $db_adapter$ (list available <a src="http://squeryl.org/supported-databases.html" >here</a>)</li>
+            <li>Adapter : $db_adapter$ (list available <a href="http://squeryl.org/supported-databases.html" >here</a>)</li>
           </ul>
           Once your database is configured you can jump to the next section.
         </p>
@@ -68,8 +68,10 @@ class BaseServlet extends ScalatraServlet {
         <p>
           What do we have in here :
           <ul>
-            <li><a src="http://localhost:8080/" >http://localhost:8080/</a> : This web page</li>
-            <li><a src="http://localhost:8080/db/init" >http://localhost:8080/db/init</a> : Initialises your database schema</li>
+            <li><a href="http://localhost:8080/" >http://localhost:8080/</a> : This web page</li>
+            <li><a href="http://localhost:8080/db/init" >http://localhost:8080/db/init</a> : Initialises your database schema.<br />
+            This URL should return:<br />
+            {"res":"ok","data":"Schema created"}</li>
           </ul>
           Now use some firefox plugin like <strong>REST Client</strong> in order to test these URLS :
           <ul>

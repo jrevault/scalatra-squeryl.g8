@@ -1,4 +1,4 @@
-package com.jispot.rest
+package $package$.rest
 
 import javax.servlet.http.HttpServlet
 import org.squeryl.Session
@@ -11,15 +11,15 @@ import org.squeryl.adapters.PostgreSqlAdapter
  */
 class StartupServlet extends HttpServlet {
 
-  val db_driver = "org.postgresql.Driver"
-  val db_url = "jdbc:postgresql://localhost:5432/jispot"
-  val db_username = "postgres"
-  val db_password = "123erty"
+  val db_driver = "$db_driver$"
+  val db_url = "$db_url$"
+  val db_username = "$db_username$"
+  val db_password = "$db_password$"
    
   override def init() = {
     Class.forName( db_driver );
     SessionFactory.concreteFactory = Some( ()=> Session.create(
-        java.sql.DriverManager.getConnection( db_url, db_username, db_password ), new PostgreSqlAdapter ) )
+        java.sql.DriverManager.getConnection( db_url, db_username, db_password ), new $db_adapter$ ) )
   }
 
 }
