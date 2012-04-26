@@ -25,8 +25,11 @@ The '.g8' suffix is implicit:
 You will now be prompted for each parameters... I know there are a lot, and they aren't logically ordered (I don't know why) :7
 
 Once everything is ok (you can leave everything by default) :
+    
     $ cd <your newly created folder>
+    
     $ sbt
+    
     $ container start
     
 Then just open a navigator and go there http://localhost:8080(http://localhost:8080) and you'll have frther instructions.
